@@ -1,5 +1,5 @@
-function index (ctx, next) {
-    ctx.body = 'user page';
+async function index (ctx, next) {
+    await ctx.render('user.html');
 }
 
 module.exports = { 

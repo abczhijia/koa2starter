@@ -1,9 +1,9 @@
-function index (ctx, next) {
-    ctx.body = 'index page';
+async function index (ctx, next) {
+    await ctx.render('index.html');
 }
 
-function about (ctx, next) {
-    ctx.body = 'about page';
+async function about (ctx, next) {
+    await ctx.render('about.html');
 }
 
 module.exports = {

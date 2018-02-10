@@ -6,6 +6,7 @@
   "author": "yishuangxi <yishuangxi@youzan.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.4.1"
+    "koa": "^2.4.1",
+    "koa-router": "^7.4.0"
   }
 }

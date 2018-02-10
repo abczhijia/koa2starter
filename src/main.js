@@ -3,9 +3,12 @@ const path = require('path');
 const views = require('koa-views');
 const static = require('koa-static');
 const router = require('./router');
+const logger = require('./middleware/logger');
 
 const app = new Koa();
 const port = 3000;
+
+app.use(logger());
 
 //静态资源
 app.use(static(path.join(__dirname, 'static'), {

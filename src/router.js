@@ -1,12 +1,10 @@
 const Router = require('koa-router');
 const router = new Router();
+const home = require('./controller/home');
+const user = require('./controller/user');
 
-router.get('/', function(ctx, next) {
-    ctx.body = 'index page';
-});
-
-router.get('/about', function(ctx, next) {
-    ctx.body = 'about page';
-});
+router.get('/', home.index);
+router.get('/about', home.about);
+router.get('/user', user.index);
 
 module.exports = router;

@@ -6,13 +6,15 @@
   "author": "yishuangxi <yishuangxi@youzan.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/main.js"
+    "dev": "NODE_ENV=dev nodemon ./src/main.js"
   },
   "dependencies": {
     "koa": "^2.4.1",
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.3",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.14.12",
     "nunjucks": "^3.0.1"
   }
 }

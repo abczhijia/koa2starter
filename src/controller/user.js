@@ -1,7 +1,14 @@
 async function index (ctx, next) {
-    await ctx.render('user.html');
+	console.log('ctx.query: ', ctx.request.query);
+	await ctx.render('user.html');
 }
 
-module.exports = { 
-    index,
+async function createUser (ctx, next) {
+	console.log('ctx.request.body: ', ctx.request.body);
+	ctx.body = {};
+}
+
+module.exports = {
+	index,
+	createUser,
 };

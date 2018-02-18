@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.3",
